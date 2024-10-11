@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(assets/fondo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.contenedor {
+    background-color: #fff; 
+    padding: 20px;
+    border-radius: 10px; /* Esquinas redondeadas */
+    width: 400px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.seccion-input {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+#entradaTarea {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#botonAgregarTarea {
+    padding: 10px;
+    border: none;
+    background-color: rgb(107, 170, 212);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#botonAgregarTarea:hover {
+    background-color: #09255a;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+li.completada .texto-tarea {
+    text-decoration: line-through;
+}
+
+.texto-tarea {
+    flex-grow: 1;
+    margin-left: 10px;
+}
+
+.boton-eliminar {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.boton-eliminar img {
+    width: 20px;
+    height: 20px;
+}
