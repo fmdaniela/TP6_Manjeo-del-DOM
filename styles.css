@@ -83,3 +83,27 @@ li.completada .texto-tarea {
     width: 20px;
     height: 20px;
 }
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em; /* Reduce el tamaño del título */
+    }
+
+    .seccion-input {
+        flex-direction: column; /* Coloca el input y el botón en columna */
+        align-items: stretch; /* Alinea los elementos a lo largo del eje principal */
+    }
+
+    #entradaTarea {
+        width: 100%; /* Hace que el input ocupe todo el ancho */
+        margin-bottom: 10px; /* Agrega espacio entre el input y el botón */
+    }
+
+    #botonAgregarTarea {
+        width: 100%; /* Hace que el botón ocupe todo el ancho */
+    }
+
+    ul {
+        margin-top: 10px; /* Reduce el margen superior para listas */
+    }
+}
